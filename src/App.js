@@ -7,9 +7,15 @@ function Gallery() {
   return (
     <div className="Gallery">
       <p>Gallery</p>
-      <div className="Posting">
-        <p>Posting</p>
-      </div>
+      <Posting />
+    </div>
+  )
+}
+
+function Posting() {
+  return (
+    <div className="Posting">
+      <p>Posting</p>
     </div>
   )
 }
