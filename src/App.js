@@ -30,6 +30,17 @@ function Directory() {
   )
 }
 
+function Sidebar() {
+  return (
+    <div className="Sidebar">
+      <p>Sidebar</p>
+      <div className="Help">
+        <p>Help</p>
+      </div>
+    </div>
+  )
+}
+
 function App() {
   return (
     <div>
@@ -38,12 +49,7 @@ function App() {
         <Searchbar />
         <Directory />
         <Gallery />
-        <div className="Sidebar">
-          <p>Sidebar</p>
-          <div className="Help">
-            <p>Help</p>
-          </div>
-        </div>
+        <Sidebar />
       </div>
     </div>
   );
