@@ -6,6 +6,8 @@ import Searchbar from './components/Searchbar';
 import Directory from './components/Directory';
 import Gallery from './components/Gallery';
 import Sidebar from './components/Sidebar';
+
+// Import CSS
 import './App.css';
 
 function App() {
