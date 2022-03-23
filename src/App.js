@@ -14,14 +14,20 @@ function Gallery() {
   )
 }
 
+function Searchbar() {
+  return (
+    <div className="Searchbar">
+      <p>Searchbar</p>
+    </div>
+  )
+}
+
 function App() {
   return (
     <div>
       <h1>craigslist</h1>
       <div className="App">
-        <div className="Searchbar">
-          <p>Searchbar</p>
-        </div>
+        <Searchbar />
         <div className="Directory">
           <p>Directory</p>
         </div>
