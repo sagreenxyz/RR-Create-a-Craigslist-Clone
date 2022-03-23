@@ -1,4 +1,4 @@
-export const postings = [
+const postings = [
     {
         title: "Car For Sale",
         description: "Dope 1989 Honda Civic on 22\" rims, don't waste my time I know what I have",
@@ -24,3 +24,5 @@ export const postings = [
         imageURL: '/assets/dirty_dancing_vhs.jpeg'
     }
 ]
+
+export default postings;

@@ -1,21 +1,26 @@
 // Import data
+import postings from './postings';
 
 // Import components
 import './App.css';
 
-function Gallery() {
+function Gallery(props) {
   return (
     <div className="Gallery">
       <p>Gallery</p>
-      <Posting />
+      {props.postings.map((data, i) => {
+        return <Posting data={data} key={i}/>
+      })}
     </div>
   )
 }
 
-function Posting() {
+function Posting(props) {
   return (
     <div className="Posting">
-      <p>Posting</p>
+      <h1>{props.data.title}</h1>
+      <p>{props.data.description}</p>
+      <img src={props.data.imageURL} alt={props.data.title} />
     </div>
   )
 }
@@ -60,7 +65,7 @@ function App() {
       <div className="App">
         <Searchbar />
         <Directory />
-        <Gallery />
+        <Gallery postings={postings}/>
         <Sidebar />
       </div>
     </div>
