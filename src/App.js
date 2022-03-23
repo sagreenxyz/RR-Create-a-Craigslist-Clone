@@ -22,15 +22,21 @@ function Searchbar() {
   )
 }
 
+function Directory() {
+  return (
+    <div className="Directory">
+      <p>Directory</p>
+    </div>
+  )
+}
+
 function App() {
   return (
     <div>
       <h1>craigslist</h1>
       <div className="App">
         <Searchbar />
-        <div className="Directory">
-          <p>Directory</p>
-        </div>
+        <Directory />
         <Gallery />
         <div className="Sidebar">
           <p>Sidebar</p>
