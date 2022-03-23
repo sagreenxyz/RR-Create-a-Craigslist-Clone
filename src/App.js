@@ -40,9 +40,15 @@ function Sidebar() {
   return (
     <div className="Sidebar">
       <p>Sidebar</p>
-      <div className="Help">
-        <p>Help</p>
-      </div>
+      <Help />
+    </div>
+  )
+}
+
+function Help() {
+  return (
+    <div className="Help">
+      <p>Help</p>
     </div>
   )
 }
